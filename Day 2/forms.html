@@ -8,25 +8,29 @@
     <body>
        <form> <!-- radio is for just one choose-->
            <label for="fname">first name:</label>
-           <input type="text" name="" id="fname"> <br>
+           <input type="text" name="" id="fname" placeholder="enter your first name"> <br> <!--placeholder mal neveshte kamrange-->
            <label> <b>gender</b></label> <br>
-           <label for="">male</label>
-           <input type="radio" name="gender" id="male"> <br>
+           <label for="male">male</label>
+           <input type="radio" name="gender" id="male" value="m"> <br>
 
-           <label for="">female</label>
-           <input type="radio" name="gender" id="female"> <br>
-           <input type="checkbox" name="accept_rules" id="rules" > <!--value search?-->
+           <label for="female">female</label>
+           <input type="radio" name="gender" id="female" value="f"> 
+           
+           <br>
+           <input type="checkbox" name="accept_rules" id="rules" value="1" > 
            <label for="rules">I accept the rules</label>
-           <input type="checkbox" name="accept_rules" id="rules" >
+           <input type="checkbox" name="accept_rules" id="rules" value="2">
            <label for="rules">I accept the rules 2</label>
+           
            <br>
         <!-- drop down list (select list) -->
         <label for="city" id="city"></label>
         <select name="city" id="city">
             
-            <option>tehran</option>
-            <option>shiraz</option>
+            <option value="tehran">tehran</option>
+            <option value="shiraz">shiraz</option>
         </select>
+        
         <br>
         <label for="car" id="car"></label>
         <select name="car" id="car">what is your car:
@@ -34,6 +38,65 @@
             <option>benz</option>
             <option>bmw</option>
         </select>
+        
+        <br>
+        <label for="browser_list">what is your browser:</label>
+        <input list="browser" name="browser" id="browser_list">
+        <datalist id="browser">
+            <option value="fire fox"></option>
+            <option value="opera"></option>
+        </datalist>
+        
+        <br>
+        <!-- baraye vaghti karbar bayad boland benevise chon textfil koochike -->
+        <label for="adress">adress</label> <br>
+        <textarea name="adress" id="adress" rows="10" cols="20" >wirte your adress</textarea>
+        
+        <br>
+        <!-- maqadir adadi -->
+        <label for="streetno">street no. :</label> <br>
+        <input type="number" max="10" min="5" name="streetno" id="streetno">
+        
+        <br>
+        <input type="submit" value="sabt">
+        <input type="reset">
+        <input type="button" value="I do nothing">
+        <br>
+        <button type="submit">sabt</button> <!--type haye motefavet-->
+        <button type="reset">reset</botton>
+        <button type="button">I do nothing</button>
+        <br>
+        <button type="submit">
+            <img src="https://picsum.photos/200"> <!--in button we can use img but not in input-->
+        </button>
+        <br>
+        
+        <!-- more inputs -->
+        <form enctype="multipart/form-data"> <!--harvagt too form type file dashtim bayad az enctype mulipart dar form estefade kard-->
+            <input type="hidden" name="planno" value="1">
+            <label for="fname">first name:</label>
+           <input type="text" name="" id="fname" placeholder="enter your first name"> <br>
+           <label for="emal">email:</label>
+            <input type="email" name="email" placeholder="enter email"> 
+            
+            <br>
+            <label for="pass">password :</label>
+            <input type="password" name="pass" id="password">
+            <br>
+            <button type="submit">ok</button>
+
+            <br>
+            <input type="search" > <br>
+            <input type="date" > <br>
+            
+            <input type="file" name="cartmeli" id="cartmeli">
+            
+            
+            
+            <br>
+            <button type="submit">ثبت</button>
+        </form>
+
 
 
        </form>
