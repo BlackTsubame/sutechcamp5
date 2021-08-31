@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <meta charset="utf_8">
+        <meta name="description" content="sutec camp 5">
+        <meta name="keywords" content="html, css, php, js">
+        <meta name="author" content="Noshad Kohli">
+        <!-- <meta http-equiv="refresh" content="4"> هر چهار ثانیه ریفرش میکنه -->
+        <meta name="viewpoint" content="width=device-width , initial-scale=1.0"> <!--برای ریپانسیو بودن برای دیوایس های مختلف-->
+        <link rel="icon" type="image/png" sizes="" href="">
+        <!-- برای آی دی هستک استفاده میشه و برای کلاس دات در style -->
+        <style>
+            .box {
+                width: 100px;
+                height: 100px;
+            }
+            /* .box>p {
+                color: white;
+            } */
+            .box  {
+                width: 100px;
+               height: 100px;
+            }
+        
+            .b1 {
+                /* default->position: static; */
+                position: relative;
+                top: 0px;
+                bottom: 20px;
+                left: 10px;
+                background-color: greenyellow;
+            }
+            .b2 {
+                position: absolute;
+                right: 0;
+                bottom: -10px;
+                background-color: red;
+            }
+            .b3 {
+                position: fixed;
+                right: 50px;
+                bottom: 50px;
+                background-color: blue;
+            }
+            .b4 {
+                position: sticky;
+                top: 0;
+                background-color: rosybrown;
+            }
+            .wrapper {
+                position: relative;
+               width: auto;
+               height: 500px;
+               border: 10px solid black;
+            }
+           
+           
+        </style>
+        <link rel="stylesheet" href="css/style.css">
+        <title>position</title>
+    </head>
+
+    <body dir="auto">
+        <div class="wrapper">
+            <div class="box b1">
+              <p >box1</p>
+            </div>
+            <div class="box b2">
+              <p>box2</p>
+            </div>
+            <div class="box b3">
+                <p>box3</p>
+            </div>
+            <div class="box b4">
+                <p>box4</p>
+            </div>
+          </div> 
+      
+      
+    </body>
+</html>

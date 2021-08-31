@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <meta charset="utf_8">
+        <meta name="description" content="sutec camp 5">
+        <meta name="keywords" content="html, css, php, js">
+        <meta name="author" content="Noshad Kohli">
+        <!-- <meta http-equiv="refresh" content="4"> هر چهار ثانیه ریفرش میکنه -->
+        <meta name="viewpoint" content="width=device-width , initial-scale=1.0"> <!--برای ریپانسیو بودن برای دیوایس های مختلف-->
+        <link rel="icon" type="image/png" sizes="" href="">
+        <!-- برای آی دی هستک استفاده میشه و برای کلاس دات در style -->
+        <style>
+            .box {
+                display: inline-block;
+                width: 100px;
+                height: 100px;
+                margin-left: 10px;
+            }
+            /* .box>p {
+                color: white;
+            } */
+            .box p {
+                color: white;
+            }
+            .x1.x2 {
+                font-size: 32px;
+            }
+            .greenyellowbox {
+                background-color: greenyellow;
+            }
+            .redbox {
+                background-color: red;
+            }
+            .bluebox {
+                background-color: blue;
+            }
+            .wrapper {
+                margin: 30px;
+            }
+            p{
+                color: chocolate;
+            }
+        </style>
+        <link rel="stylesheet" href="css/style.css">
+        <title>selector</title>
+    </head>
+
+    <body dir="auto"> 
+      
+      <div class="wrapper">
+          <div class="box greenyellowbox">
+            <p >box1</p>
+            <div>
+                <p>para2</p>
+            </div>
+          </div>
+          <div class="box redbox">
+            <p>box2</p>
+          </div>
+          <div class="box bluebox">
+              <p>box3</p>
+          </div>
+        </div>
+        
+        <p class="x1, x2">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias, fugiat fuga. Nostrum distinctio, possimus officia doloribus architecto unde vero laboriosam sunt, mollitia perferendis eligendi deserunt qui ut eaque dolore illo.
+        </p>
+    </body>
+</html>
